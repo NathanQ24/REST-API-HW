@@ -1,0 +1,37 @@
+<!-- Nathan Quinn -->
+
+<html>
+    <head>
+        <title>REST API Homework</title>
+    </head>
+    <body>
+        <h3>1. Display an HTML table with the following 3 columns: ID, Title, Body. Under each column, the corresponding data need to be fetched from the URL and displayed on the HTML page. There should be a total of 10 rows.</h3>
+        <table id = myTable>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Body</th>
+            </tr>
+        </table>
+        <h3>2. Under the table, create a div. Inside it, you fetch the body of each post and display it in a separate p tag. This means that you will have one div followed by 10 p … p pairs before the closing div."</h3>
+        <h3>3. Modify 2 above. Since body can be too long for certain posts, we want to display a maximum of 50 characters (including spaces) for each body.</h3>
+        <div id = myDiv>
+        </div>
+        <h3>4. We want to create a new local JSON object that is randomly merging posts IDs 1, 2, and 3 somehow. The new object will have 3 keys: id, title, and body. The values of each key will be determined as follows:</h3>
+        <h3>a. for key id,  randomly generate a number (rand1) that is 1, 2, or 3. Then add another random number (rand2) in the range of 100 – 200. This will make the value of this id in the range 101 – 203.</h3>
+        <h3>b. For key title, the first 5 characters of the body of post with id of random number rand1.</h3>
+        <h3>c. For key body, the second half characters of the body of post with id of random number rand1</h3>
+        <h3>This JSON obj will be displayed in the console</h3>
+        <h3>5. Display titles as a list for posts with title length of at least 30 characters. Don’t hard code things.</h3>
+        <div id = myList>
+        </div>
+        <h3>6. Display 2 lists – one of titles for posts with odd id numbers, the other of titles for posts with even id numbers. Each list will obviously contain 5 entries.</h3>
+        <h3>Even List</h3>
+        <div id = listEven>
+        </div>
+        <h3>Odd List</h3>
+        <div id = listOdd>
+        </div>
+    <script src = 'app.js'></script>
+    </body>
+</html>
